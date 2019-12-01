@@ -38,6 +38,7 @@ import { HeaderComponent } from './main/header/header.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MainPageComponent } from './main/main-page/main-page.component';
+import { LoginComponent } from './login/login.component';
  
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { MainPageComponent } from './main/main-page/main-page.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    MainPageComponent
+    MainPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
