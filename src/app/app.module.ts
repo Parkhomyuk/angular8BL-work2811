@@ -13,9 +13,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import {MatInputModule} from '@angular/material/input';
-import { 
+import {
   MatButtonModule,
-   
+
   MatDatepickerModule
  } from '@angular/material';
 import { ReservationsComponent } from './reservations/reservations/reservations.component';
@@ -29,7 +29,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 import { TitlePipe } from './pipes/title.pipe';
@@ -39,7 +39,7 @@ import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MainPageComponent } from './main/main-page/main-page.component';
 import { LoginComponent } from './login/login.component';
- 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +78,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     MatIconModule,
     FontAwesomeModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

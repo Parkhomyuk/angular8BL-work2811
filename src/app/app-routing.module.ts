@@ -5,14 +5,23 @@ import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './main/header/header.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { CheckboxDynamoComponent } from './checkbox-dynamo/checkbox-dynamo.component';
-const routes: Routes = [
-  {path: '', component:  MainComponent , child[
-    
+import {MainPageComponent} from "./main/main-page/main-page.component";
+import {ReservationsComponent} from "./reservations/reservations/reservations.component";
+import {CheckboxComponent} from "./checkbox/checkbox.component";
+
+
+
+const routes: Routes = <Routes>[
+  {path: '', component: MainComponent, children:[
+    {path:'', component: MainPageComponent, children:[
+      {path: '', component: ReservationsComponent},
+      {path: 'check', component: CheckboxComponent},
+      {path: 'tables', component: CheckboxDynamoComponent},
+
+    ]}
   ]},
-  {path: 'home', component: CheckboxDynamoComponent},
-  
-  {path: 'main', component: MainComponent},
- 
+  {path: 'login', component: LoginComponent}
+
 ];
 
 @NgModule({
