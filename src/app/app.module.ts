@@ -39,6 +39,7 @@ import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { MainPageComponent } from './main/main-page/main-page.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './main/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { LoginComponent } from './login/login.component';
     SidebarComponent,
     FooterComponent,
     MainPageComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
