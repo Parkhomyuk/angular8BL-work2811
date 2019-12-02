@@ -30,7 +30,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 import { TitlePipe } from './pipes/title.pipe';
 import { MainComponent } from './main/main.component';
@@ -81,7 +82,9 @@ import { DashboardComponent } from './main/dashboard/dashboard.component';
     MatIconModule,
     FontAwesomeModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
