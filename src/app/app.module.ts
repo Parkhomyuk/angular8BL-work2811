@@ -32,7 +32,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { TitlePipe } from './pipes/title.pipe';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './main/header/header.component';
@@ -41,6 +41,7 @@ import { FooterComponent } from './main/footer/footer.component';
 import { MainPageComponent } from './main/main-page/main-page.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
+import { SidebarMainComponent } from './main/sidebar-main/sidebar-main.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { DashboardComponent } from './main/dashboard/dashboard.component';
     FooterComponent,
     MainPageComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidebarMainComponent
   ],
   imports: [
     BrowserModule,
@@ -84,7 +86,8 @@ import { DashboardComponent } from './main/dashboard/dashboard.component';
     MatMenuModule,
     MatTooltipModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
